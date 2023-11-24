@@ -37,15 +37,15 @@ Table of Contents:
 body{
     font-family: "Poppins", sans-serif;
 }
-html {
+p {
     /* voor mobiel */
-    font-size: 14px;
+    font-size: 0.5em;
 }
 .header-title h1{
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
-.header-sub-title h2 {
-    font-size: 0.6em;
+.header-sub-title h6 {
+    font-size: 0.5em;
     font-weight: 300;
 }
 
@@ -63,15 +63,17 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: space-evenly;
-    row-gap: 20px;
     max-width: 1000px;
-    height: 300px;
+    height: 135px;
     margin: 0 auto;
 }
 .header-section > div {
     text-align: center;
+}
+.form-domain-check {
+    margin-top: 25px;
 }
 .form-domain-check input {
     border: 1px solid var(--color-dark-green);
@@ -102,8 +104,35 @@ html {
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
+.title-testimonial {
 
+}
+.title-testimonial h6 {
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: space-evenly;
+    max-width: 300px;
+    height: 160px;
+    margin: 0 auto;
+}
+.testimonial{
 
+    margin: 0 10px 20px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px white,
+    0.3em 0.3em 1em #899CA0;
+}
+.icon-quote {
+    width: 10px;
+    margin-right: 5px;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
@@ -122,6 +151,9 @@ html {
     /* voor tablets */
     html {
         font-size: 18px;
+    }
+    .header-section {
+        height: 210px;
     }
     .header-title h1{
         font-size: 2.8em;
@@ -142,10 +174,13 @@ html {
     html {
         font-size: 20px;
     }
+   /* .header-section {
+        height: 210px;
+    }
     .header-title h1{
         font-size: 3.6em;
     }
     .header-sub-title h2 {
         font-size: 0.6em;
-    }
+    }*/
 }
