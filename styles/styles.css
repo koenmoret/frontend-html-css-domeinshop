@@ -42,7 +42,7 @@ html {
     font-size: 14px;
 }
 .header-title h1{
-    font-size: 2.8em;
+    font-size: 1.8em;
 }
 .header-sub-title h2 {
     font-size: 0.6em;
@@ -55,13 +55,11 @@ html {
 ////////////////////////*/
 /*///////////// 3.1 Header /////////////*/
 .header-image{
-    height: 500px;
     background-image: url("../assets/images/mountains.jpg");
     background-position: center;
     background-size: cover;
-
 }
-/*.header-section {
+.header-section {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -77,26 +75,31 @@ html {
 }
 .form-domain-check input {
     border: 1px solid var(--color-dark-green);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 25px;
     margin: 0;
-    padding: 10px 30px 10px 15px;
+    padding: 0 0 0 5px;
+    vertical-align: top;
     outline: none;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 .btn-domain-check {
     border: 1px solid var(--color-dark-green);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 0.6em;
     color: #FFF;
     background-color: var(--color-dark-green);
     cursor: pointer;
+    height: 25px;
     margin: 0 0 0 -5px;
-    padding: 10px 20px 10px 20px;
+    padding: 0 5px 0 5px;
+    vertical-align: top;
 }
 .btn-domain-check:hover {
     cursor: pointer
-}*/
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
@@ -126,6 +129,12 @@ html {
     .header-sub-title h2 {
         font-size: 0.6em;
     }
+    .form-domain-check input {
+        padding: 0 60px 0 20px;
+    }
+    .btn-domain-check {
+        padding: 0 20px 0 20px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -138,8 +147,5 @@ html {
     }
     .header-sub-title h2 {
         font-size: 0.6em;
-    }
-    .form-domain-check input {
-        padding: 10px 70px 10px 15px;
     }
 }
