@@ -16,6 +16,7 @@ Table of Contents:
 .dev {
     border: 1px dashed red!important;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,16 +35,19 @@ Table of Contents:
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
+
 p {
     /* voor mobiel */
     font-size: 0.5em;
 }
-.header-title h1{
+
+.header-title h1 {
     font-size: 1.6em;
 }
+
 .header-sub-title h6 {
     font-size: 0.5em;
     font-weight: 300;
@@ -54,11 +58,12 @@ p {
     3. Areas
 ////////////////////////*/
 /*///////////// 3.1 Header /////////////*/
-.header-image{
+.header-image {
     background-image: url("../assets/images/mountains.jpg");
     background-position: center;
     background-size: cover;
 }
+
 .header-section {
     display: flex;
     flex-direction: column;
@@ -69,12 +74,15 @@ p {
     height: 135px;
     margin: 0 auto;
 }
+
 .header-section > div {
     text-align: center;
 }
+
 .form-domain-check {
     margin-top: 25px;
 }
+
 .form-domain-check input {
     border: 1px solid var(--color-dark-green);
     border-top-left-radius: 15px;
@@ -86,6 +94,7 @@ p {
     outline: none;
     font-size: 0.6em;
 }
+
 .btn-domain-check {
     border: 1px solid var(--color-dark-green);
     border-top-right-radius: 15px;
@@ -99,47 +108,70 @@ p {
     padding: 0 5px 0 5px;
     vertical-align: top;
 }
+
 .btn-domain-check:hover {
     cursor: pointer
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
-.title-testimonial {
-
-}
-.title-testimonial h6 {
-    padding: 25px 0 25px 0;
+.testimonial-title {
     text-align: center;
+    padding: 25px 0 25px 0;
 }
+
 .testimonials {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: space-evenly;
-    max-width: 300px;
-    height: 160px;
+    height: 220px;
     margin: 0 auto;
 }
-.testimonial{
 
+.testimonial-block {
     margin: 0 10px 20px 10px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 10px 10px;
+    max-width: 478px;
+    border-radius: 5px;
     box-shadow: 0 0 0 2px white,
     0.3em 0.3em 1em #899CA0;
 }
+
 .icon-quote {
     width: 10px;
     margin-right: 5px;
 }
 
 /*///////////// 3.3 Support /////////////*/
-
+.support {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: space-evenly;
+    height: 220px;
+    margin: 0 auto;
+}
+.support-title {
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+.support-block {
+    margin: 0 10px 20px 10px;
+    max-width: 478px;
+    border-radius: 5px;
+}
+.support-image {
+    width: 100%;
+    border-radius: 5px;
+}
+figcaption {
+    font-size: 0.4em;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
-
 
 
 /*///////////// 3.5 Footer /////////////*/
@@ -155,32 +187,38 @@ p {
     .header-section {
         height: 210px;
     }
-    .header-title h1{
+
+    .header-title h1 {
         font-size: 2.8em;
     }
+
     .header-sub-title h2 {
         font-size: 0.6em;
     }
+
     .form-domain-check input {
         padding: 0 60px 0 20px;
     }
+
     .btn-domain-check {
         padding: 0 20px 0 20px;
+    }
+    .testimonials{
+        max-width: 500px;
+    }
+    .testimonial-block {
+        padding: 10px 50px;
+    }
+    .support {
+        max-width: 500px;
+        height: 300px;
+    }
+    .support-block {
+        /*padding: 10px 50px;*/
     }
 }
 
 @media screen and (min-width: 1200px) {
     /* voor desktops en groter */
-    html {
-        font-size: 20px;
-    }
-   /* .header-section {
-        height: 210px;
-    }
-    .header-title h1{
-        font-size: 3.6em;
-    }
-    .header-sub-title h2 {
-        font-size: 0.6em;
-    }*/
+
 }
