@@ -16,7 +16,6 @@ Table of Contents:
 .dev {
     border: 1px dashed red!important;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,7 +34,6 @@ Table of Contents:
     color:#FFF;
     background-color: var(--color-dark-green);
     border: none;
-
 }
 
 /*////////////////////////
@@ -44,7 +42,6 @@ Table of Contents:
 body {
     font-family: "Poppins", sans-serif;
 }
-
 p {
     /* voor mobiel */
     font-size: 8px;
@@ -59,6 +56,16 @@ h6 {
     font-size: 8px;
     font-weight: 300;
 }
+a {
+    color: var(--color-gray);
+}
+a:hover {
+    text-decoration: none;
+}
+li {
+    font-size: 8px;
+    margin-left: 12px;
+}
 .btn {
     font-size: 9px;
     color: #FFF;
@@ -67,21 +74,36 @@ h6 {
     border: 1px solid var(--color-dark-green);
     border-radius: 10px;
 }
+.btn:hover {
+    cursor: pointer;
+}
 input {
     font-size: 9px;
 }
+details p {
+    font-size: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: var(--color-gray);
+    border-radius: 5px;
+}
+summary {
+    font-size: 8px;
+    margin-bottom: 8px;
+}
+summary:hover {
+    cursor: pointer;
+}
 
-
-/*////////////////////////
-    3. Areas
-////////////////////////*/
+    /*////////////////////////
+        3. Areas
+    ////////////////////////*/
 /*///////////// 3.1 Header /////////////*/
 .header-image {
     background-image: url("../assets/images/mountains.jpg");
     background-position: center;
     background-size: cover;
 }
-
 .header-section {
     display: flex;
     flex-direction: column;
@@ -92,15 +114,12 @@ input {
     height: 135px;
     margin: 0 auto;
 }
-
 .header-section > div {
     text-align: center;
 }
-
 .form-domain-check {
     margin-top: 25px;
 }
-
 .form-domain-check input {
     border: 1px solid var(--color-dark-green);
     border-radius: 15px 0 0 15px;
@@ -110,7 +129,6 @@ input {
     vertical-align: top;
     outline: none;
 }
-
 .btn-domain-check {
     /*border: 1px solid var(--color-dark-green);*/
     border-radius: 0 15px 15px 0;
@@ -120,27 +138,23 @@ input {
     padding: 0 5px 0 5px;
     vertical-align: top;
 }
-
 .btn-domain-check:hover {
     cursor: pointer
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
-.testimonial-title {
-    text-align: center;
-    padding: 25px 0 25px 0;
-}
-
 .testimonials {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: space-evenly;
-    height: 220px;
     margin: 0 auto;
 }
-
+.testimonial-title {
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
 .testimonial-block {
     margin: 0 10px 20px 10px;
     padding: 10px 10px;
@@ -149,20 +163,25 @@ input {
     box-shadow: 0 0 0 2px white,
     0.3em 0.3em 1em #899CA0;
 }
-
 .icon-quote {
     width: 10px;
     margin-right: 5px;
 }
+.testimonial-person {
+   /* max-height: 45px;*/
+}
+.testimonial-person-block {
+    /*display: inline-block;
+    max-height: 45px;*/
+}
+.testimonial-avatar {
+    /*height: 100%;
+    width: auto;*/
+}
 
 /*///////////// 3.3 Support /////////////*/
 .support {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: space-evenly;
-    height: 220px;
+    max-width: 500px;
     margin: 0 auto;
 }
 .support-title {
@@ -183,11 +202,28 @@ figcaption {
     margin-bottom: 10px;
 }
 
-
 /*///////////// 3.4 Faq /////////////*/
-
+.faq {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.faq-title {
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+.faq-block {
+    margin: 0 10px 20px 10px;
+    max-width: 478px;
+    border-radius: 5px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+.copy-right {
+    text-align: center;
+    padding: 7px 0;
+    color: #FFF;
+    background-color: var(--color-dark-green);
+}
 
 /*////////////////////////
     4. Media
@@ -195,30 +231,32 @@ figcaption {
 @media screen and (min-width: 900px) {
     /* voor tablets */
     p {
-        font-size: 8px;
+        font-size: 0.6em;
     }
     h2 {
-        font-size: 16px;
+        font-size: 1.2em;
     }
     h6{
-        font-size: 8px;
+        font-size: 0.6em;
+    }
+    li {
+        font-size: 0.6em;
+    }
+    summary {
+        font-size: 0.6em;
     }
     .header-section {
         height: 210px;
     }
-
     .header-title h1 {
         font-size: 2.8em;
     }
-
     .header-sub-title h2 {
         font-size: 0.6em;
     }
-
     .form-domain-check input {
         padding: 0 60px 0 20px;
     }
-
     .btn-domain-check {
         padding: 0 20px 0 20px;
     }
@@ -228,12 +266,22 @@ figcaption {
     .testimonial-block {
         padding: 10px 50px;
     }
+    .testimonial-avatar {
+        width: 60px;
+        height: auto;
+    }
     .support {
         max-width: 500px;
-        height: 315px;
+        height: 322px;
     }
-    .support-block {
-        /*padding: 10px 50px;*/
+    figcaption {
+        font-size: 0.5em;
+    }
+    .faq {
+
+    }
+    details p {
+        padding: 15px;
     }
 }
 
