@@ -30,7 +30,13 @@ Table of Contents:
     --color-gray: #899CA0;
     --color-dark-green: #1C2B32;
 }
+.btn-primary {
+    font-size: 10px;
+    color:#FFF;
+    background-color: var(--color-dark-green);
+    border: none;
 
+}
 
 /*////////////////////////
     2. Typography
@@ -41,16 +47,28 @@ body {
 
 p {
     /* voor mobiel */
-    font-size: 0.5em;
+    font-size: 8px;
 }
-
-.header-title h1 {
-    font-size: 1.6em;
+h1 {
+    font-size: 24px;
 }
-
-.header-sub-title h6 {
-    font-size: 0.5em;
+h2 {
+    font-size: 12px;
+}
+h6 {
+    font-size: 8px;
     font-weight: 300;
+}
+.btn {
+    font-size: 9px;
+    color: #FFF;
+    background-color: var(--color-dark-green);
+    padding: 5px 15px 5px 15px;
+    border: 1px solid var(--color-dark-green);
+    border-radius: 10px;
+}
+input {
+    font-size: 9px;
 }
 
 
@@ -85,23 +103,17 @@ p {
 
 .form-domain-check input {
     border: 1px solid var(--color-dark-green);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px 0 0 15px;
     height: 25px;
     margin: 0;
     padding: 0 0 0 5px;
     vertical-align: top;
     outline: none;
-    font-size: 0.6em;
 }
 
 .btn-domain-check {
-    border: 1px solid var(--color-dark-green);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 0.6em;
-    color: #FFF;
-    background-color: var(--color-dark-green);
+    /*border: 1px solid var(--color-dark-green);*/
+    border-radius: 0 15px 15px 0;
     cursor: pointer;
     height: 25px;
     margin: 0 0 0 -5px;
@@ -168,6 +180,7 @@ p {
 }
 figcaption {
     font-size: 0.4em;
+    margin-bottom: 10px;
 }
 
 
