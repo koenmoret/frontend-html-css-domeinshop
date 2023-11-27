@@ -236,6 +236,7 @@ figcaption {
 /*///////////// 3.5 Footer /////////////*/
 .copy-right {
     text-align: center;
+    margin-top: 30px;
     padding: 7px 0;
     color: #FFF;
     background-color: var(--color-dark-green);
@@ -283,7 +284,7 @@ figcaption {
         padding: 10px 50px;
     }
     .testimonial-avatar {
-        width: 60px;
+        max-width: 45px;
         height: auto;
     }
     .testimonial-person-block-2 span {
@@ -295,9 +296,6 @@ figcaption {
     }
     figcaption {
         font-size: 0.5em;
-    }
-    .faq {
-
     }
     details p {
         padding: 15px;
